@@ -19,7 +19,7 @@ with open('src/html.html', 'r') as html:
 html.close()
 
 # Add commands
-with open('commands.js', 'r') as commands:
+with open('src/commands.js', 'r') as commands:
     output += '<script>'
     output += commands.read()
     output += '</script>'
