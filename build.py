@@ -14,7 +14,7 @@ def write(output):
     f.close()
 
 # Add HTML
-with open('html.html', 'r') as html:
+with open('src/html.html', 'r') as html:
     output += html.read()
 html.close()
 
@@ -26,14 +26,14 @@ with open('commands.js', 'r') as commands:
 commands.close()
 
 # Add JS
-with open('js.js', 'r') as js:
+with open('src/js.js', 'r') as js:
     output += '<script>'
     output += js.read()
     output += '</script>'
 js.close()
 
 # Add CSS
-with open('css.css', 'r') as css:
+with open('src/css.css', 'r') as css:
     output += '<style>'
     output += css.read()
     output += '</style>'
